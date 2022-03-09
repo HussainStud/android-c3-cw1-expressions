@@ -1,0 +1,35 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    double grade = 80;
+	    
+	    String gottenGrade = calculateGrade(grade);
+	    
+	    System.out.println("Congragulation your final grade is: " + gottenGrade+ ".");
+	}
+	
+	
+	public static String calculateGrade(double grade) {
+	    String resultGrade;
+	    
+	    if((grade >= 90) && (grade <= 100)) {
+	        resultGrade= "A";
+	    } else if (grade >= 80 && grade < 90) {
+	        resultGrade= "B";
+	    } else if(grade >= 70 && grade < 80) {
+	        resultGrade= "C";
+	        
+	    } else if(grade >= 60 && grade < 70) {
+	        resultGrade= "D";
+	    } else if(grade >= 50 && grade < 60) {
+	        resultGrade= "E";
+	    } else {
+	        resultGrade= "F";
+	    }
+	    
+	    return resultGrade;
+	}
+}
+
